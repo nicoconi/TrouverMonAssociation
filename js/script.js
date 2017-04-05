@@ -16,7 +16,7 @@ $(document).ready(function () {
     $("#linkto").click(function () {
         var offset = 20; //Offset of 20px
         $('html, body').animate({
-            scrollTop: $("#second").offset().top + offset
+            scrollTop: $(".wrapper-section").offset().top + offset
         }, 1000, 'swing');
     });
     $('.switcher > .switch-icon , .switch-list').click(function () {

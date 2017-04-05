@@ -560,7 +560,6 @@ display: block;
 /*-------------------------------*/
 #filters-container{
     height: 100%;
-    width: 100%;
     padding-top: 20px;
     padding-left: 0px;
     padding-right: 0px;
@@ -585,33 +584,53 @@ display: block;
     display: block;
 }
 
-.agri.active{
-background: #417505;}
+.agri{
+background: #417505;
+        color: white;
 
-.art.active{
+}
+
+.art{
  background:   #4990E2;
+        color: white;
+
 }
-.sociale.active{
+.sociale{
     background: #FF7C7C;
+        color: white;
+
 }
 
-.educ.active{
+.educ{
     background: #F6A623;
-}
+        color: white;
 
-.santé.active{
+}
+.santé{
     background: #50E3C2;
+        color: white;
+
 }
 
-.sports.active{
+.sports{
     background: #D0011B;
+        color: white;
+
 }
 
-.religion.active{
+.religion{
   background: #4A4A4A;
+    color: white;
 }
-.internat.active{
+.internat{
     background: #9B9B9B;
+        color: white;
+
+}
+
+.loisirs{
+   background:  #7ED321;
+    color: white;
 }
 /*-------------------------------*/
 
@@ -669,8 +688,6 @@ background: #417505;}
 #mapid {
     position: relative;
     height: 70vh;
-    border: 2px solid #D1B7B7;
-box-shadow: 0 6px 8px 0 rgba(195,181,181,0.50);
 }
 
 #container-list {
@@ -704,6 +721,9 @@ position: absolute;
     top: 0;
 z-index: 1;
     height: 70vh;
+        border: 2px solid #D1B7B7;
+
+    box-shadow: 0 6px 8px 0 rgba(195,181,181,0.50);
 }
 .input-group-btn, input-group-btn > .btn{
     border-radius: 8px;
@@ -779,7 +799,7 @@ i{
 #group-dropd-list{
  padding: 0;
     float: left;
-    text-align: right;
+  text-align: left;
 }
 
 #dropdown-menu-list{
@@ -787,7 +807,29 @@ i{
     right: 0;
 }
 
-
+.valider {
+    padding: 5px 10px;
+    display: inline;
+    background: #777 url(button.png) repeat-x bottom;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    text-shadow: 1px 1px #666;
+    background-color: #e50000;
+    }
+.valider:hover {
+    background-position: 0 -48px;
+    }
+.valider:active {
+    background-position: 0 top;
+    position: relative;
+    top: 1px;
+    padding: 6px 10px 4px;
+    }
 
 
 

@@ -60,6 +60,7 @@ Comment utiliser le site ?</a> </li>
 </a>
             <!-- /#page-content-wrapper -->
         </section>
+        <div class="wrapper-section">
         <section class="map" id="second">
            
             <div class="switcher">
@@ -91,41 +92,41 @@ Comment utiliser le site ?</a> </li>
                                     <ul role="menu" class="dropdown-menu" id="dropdown-menu-map">
                                         <li>
                                             <a href="#">
-                                                <input type="checkbox" id="checkAll"><span class="lbl"> Sélectionner/Déselectionner tout</span> </a>
+                                                <input type="checkbox" id="checkAll" checked><span class="lbl"> Sélectionner/Déselectionner tout</span> </a>
                                         </li>
                                         <li class="divider"></li>
                                         <li>
                                             <a>
-                                                <input type="checkbox" class="check"> <span class="lbl"> Les Cévennes</span> </a>
+                                                <input type="checkbox" class="check" checked> <span class="lbl"> Les Cévennes</span> </a>
                                         </li>
                                         <li>
                                             <a>
-                                                <input type="checkbox" class="check"><span class="lbl">
+                                                <input type="checkbox" class="check" checked><span class="lbl">
 								Port Marianne</span> </a>
                                         </li>
                                         <li>
                                             <a>
-                                                <input type="checkbox" class="check"><span class="lbl">
+                                                <input type="checkbox" class="check" checked><span class="lbl">
 								Mosson</span> </a>
                                         </li>
                                         <li>
                                             <a>
-                                                <input type="checkbox" class="check"><span class="lbl">
+                                                <input type="checkbox" class="check" checked><span class="lbl">
 								Près d'Arènes</span> </a>
                                         </li>
                                         <li>
                                             <a>
-                                                <input type="checkbox" class="check"><span class="lbl">
+                                                <input type="checkbox" class="check" checked><span class="lbl">
 								Croix d'Argent</span> </a>
                                         </li>
                                         <li>
                                             <a>
-                                                <input type="checkbox" class="check"><span class="lbl">
+                                                <input type="checkbox" class="check" checked><span class="lbl">
 								Montpellier Centre</span> </a>
                                         </li>
                                         <li>
                                             <a>
-                                                <input type="checkbox" class="check"><span class="lbl">
+                                                <input type="checkbox" class="check" checked><span class="lbl">
 								Hôpitaux Facultés</span> </a>
                                         </li>
                                     </ul>
@@ -138,30 +139,30 @@ Comment utiliser le site ?</a> </li>
                                     <ul role="menu" class="dropdown-menu" id="dropdown-menu-map">
                                         <li>
                                             <a href="#">
-                                                <input type="checkbox" id="checkAllAge"><span class="lbl"> Sélectionner/Déselectionner tout</span> </a>
+                                                <input type="checkbox" id="checkAllAge" checked><span class="lbl"> Sélectionner/Déselectionner tout</span> </a>
                                         </li>
                                         <li class="divider"></li>
                                         <li>
                                             <a>
-                                                <input type="checkbox" class="checkAge"> <span class="lbl">Tout petits</span> </a>
+                                                <input type="checkbox" class="checkAge" checked> <span class="lbl">Tout petits</span> </a>
                                         </li>
                                         <li>
                                             <a>
-                                                <input type="checkbox" class="checkAge"><span class="lbl"> Enfants</span> </a>
+                                                <input type="checkbox" class="checkAge" checked><span class="lbl"> Enfants</span> </a>
                                         </li>
                                         <li>
                                             <a>
-                                                <input type="checkbox" class="checkAge"><span class="lbl">
+                                                <input type="checkbox" class="checkAge" checked><span class="lbl">
 								Ados</span> </a>
                                         </li>
                                         <li>
                                             <a>
-                                                <input type="checkbox" class="checkAge"><span class="lbl">
+                                                <input type="checkbox" class="checkAge" checked><span class="lbl">
 								Adultes</span> </a>
                                         </li>
                                         <li>
                                             <a>
-                                                <input type="checkbox" class="checkAge"><span class="lbl">
+                                                <input type="checkbox" class="checkAge" checked><span class="lbl">
 								Séniors</span> </a>
                                         </li>
                                     </ul>
@@ -179,94 +180,95 @@ Comment utiliser le site ?</a> </li>
                     </div>
                 </div>
                 <div class="row">
-                    <div id="filters-container" class="col-md-12">
+                    <div id="filters-container" class="col-md-11">
                         <!-- Example single danger button -->
                        
     <span class="button-checkbox">
         <button type="button" class="btn agri" data-color="primary">Agriculture et Viticulture</button>
-        <input type="checkbox" class="hidden" checked />
+        <input type="checkbox" class="hidden"  />
     </span>
                        
                         <span class="button-checkbox">
         <button type="button" class="btn agri" data-color="primary">Animaux</button>
-        <input type="checkbox" class="hidden" checked />
+        <input type="checkbox" class="hidden"  />
     </span>
                        
                         <span class="button-checkbox">
         <button type="button" class="btn art" data-color="primary">Communication et Médias</button>
-        <input type="checkbox" class="hidden" checked />
+        <input type="checkbox" class="hidden"  />
     </span>
                        
                         <span class="button-checkbox">
         <button type="button" class="btn art" data-color="primary">Culture</button>
-        <input type="checkbox" class="hidden" checked />
+        <input type="checkbox" class="hidden"  />
     </span>
                         <span class="button-checkbox">
         <button type="button" class="btn educ" data-color="primary">Éducation</button>
-        <input type="checkbox" class="hidden" checked />
+        <input type="checkbox" class="hidden"  />
     </span>
                        
                         <span class="button-checkbox">
         <button type="button" class="btn agri" data-color="primary">Entreprise et Travail</button>
-        <input type="checkbox" class="hidden" checked />
+        <input type="checkbox" class="hidden"  />
     </span>
                        
                         <span class="button-checkbox">
         <button type="button" class="btn agri" data-color="primary">Environnement et cadre de vie</button>
-        <input type="checkbox" class="hidden" checked />
+        <input type="checkbox" class="hidden"  />
     </span>
                        
                         <span class="button-checkbox">
         <button type="button" class="btn internat" data-color="primary">International</button>
-        <input type="checkbox" class="hidden" checked />
+        <input type="checkbox" class="hidden"  />
     </span>
                        
                         <span class="button-checkbox">
-        <button type="button" class="btn" data-color="primary">Loisirs</button>
-        <input type="checkbox" class="hidden" checked />
+        <button type="button" class="btn loisirs" data-color="primary">Loisirs</button>
+        <input type="checkbox" class="hidden"  />
     </span>
                        
                         <span class="button-checkbox">
         <button type="button" class="btn sociale" data-color="primary">Militaires Anciens Combattants</button>
-        <input type="checkbox" class="hidden" checked />
+        <input type="checkbox" class="hidden"  />
     </span>
                        
                    <span class="button-checkbox">
         <button type="button" class="btn sociale" data-color="primary">Rapatriés</button>
-        <input type="checkbox" class="hidden" checked />
+        <input type="checkbox" class="hidden"  />
     </span>     
           <span class="button-checkbox">
           
         <button type="button" class="btn religion" data-color="primary">Religions et Philosophies</button>
-        <input type="checkbox" class="hidden" checked />
+        <input type="checkbox" class="hidden"  />
     </span>
                                   
                                        <span class="button-checkbox">
         <button type="button" class="btn santé" data-color="primary">Santé</button>
-        <input type="checkbox" class="hidden" checked />
+        <input type="checkbox" class="hidden"  />
     </span>    
                                   
                                    <span class="button-checkbox">
         <button type="button" class="btn educ" data-color="primary">Sciences</button>
-        <input type="checkbox" class="hidden" checked />
+        <input type="checkbox" class="hidden"  />
     </span>
                                   
                                    <span class="button-checkbox">
         <button type="button" class="btn sociale" data-color="primary">Social et Citoyenneté</button>
-        <input type="checkbox" class="hidden" checked />
+        <input type="checkbox" class="hidden"  />
     </span>
                                   
                                    <span class="button-checkbox">
         <button type="button" class="btn sports" data-color="primary">Sports</button>
-        <input type="checkbox" class="hidden" checked />
+        <input type="checkbox" class="hidden"  />
     </span>
                                   
                                    <span class="button-checkbox">
         <button type="button" class="btn sociale" data-color="primary">Vie des quartiers</button>
-        <input type="checkbox" class="hidden" checked />
+        <input type="checkbox" class="hidden" />
     </span>
                                    
                     </div>
+                    <div class="col-md-1" style="margin-top:25px;"><button class="valider">Valider</button></div>
                 </div>
             </div>
             <div class="container" id="container-list">
@@ -285,8 +287,8 @@ Comment utiliser le site ?</a> </li>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6"></div>
-                    <div class="col-md-6" id="list-dropdown">
+                <div class="col-md-11">
+                     <div class="row">    <div class="col-md-6" id="list-dropdown">
                         <div class="input-group col-md-6" id="group-dropd-list">
                             <div class="input-group-btn">
                                 <button tabindex="-1" class="btn btn-default" data-toggle="dropdown" type="button">Recherche par quartiers</button>
@@ -294,46 +296,51 @@ Comment utiliser le site ?</a> </li>
                                 <ul role="menu" class="dropdown-menu" id="dropdown-menu-list">
                                     <li>
                                         <a href="#">
-                                            <input type="checkbox" id="checkAllList"><span class="lbl"> Sélectionner/Déselectionner tout</span> </a>
+                                            <input type="checkbox" id="checkAllList" checked><span class="lbl" > Sélectionner/Déselectionner tout</span> </a>
                                     </li>
                                     <li class="divider"></li>
                                     <li>
                                         <a>
-                                            <input type="checkbox" class="checkList"> <span class="lbl"> Les Cévennes</span> </a>
+                                            <input type="checkbox" class="checkList" checked> <span class="lbl"> Les Cévennes</span> </a>
                                     </li>
                                     <li>
                                         <a>
-                                            <input type="checkbox" class="checkList"><span class="lbl">
+                                            <input type="checkbox" class="checkList" checked><span class="lbl">
 								Port Marianne</span> </a>
                                     </li>
                                     <li>
                                         <a>
-                                            <input type="checkbox" class="checkList"><span class="lbl">
+                                            <input type="checkbox" class="checkList" checked><span class="lbl">
 								Mosson</span> </a>
                                     </li>
                                     <li>
                                         <a>
-                                            <input type="checkbox" class="checkList"><span class="lbl">
+                                            <input type="checkbox" class="checkList" checked><span class="lbl">
 								Près d'Arènes</span> </a>
                                     </li>
                                     <li>
                                         <a>
-                                            <input type="checkbox" class="checkList"><span class="lbl">
+                                            <input type="checkbox" class="checkList" checked><span class="lbl">
 								Croix d'Argent</span> </a>
                                     </li>
                                     <li>
                                         <a>
-                                            <input type="checkbox" class="checkList"><span class="lbl">
+                                            <input type="checkbox" class="checkList" checked><span class="lbl">
 								Montpellier Centre</span> </a>
                                     </li>
                                     <li>
                                         <a>
-                                            <input type="checkbox" class="checkList"><span class="lbl">
+                                            <input type="checkbox" class="checkList" checked><span class="lbl">
 								Hôpitaux Facultés</span> </a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
+                        <div class="col-md-6">
+                       
+                        
+                        
+                        
                         <div class="input-group col-md-6" id="group-dropd-list">
                             <div class="input-group-btn">
                                 <button tabindex="-1" class="btn btn-default" data-toggle="dropdown" type="button">Recherche par tranche d'âge</button>
@@ -341,37 +348,134 @@ Comment utiliser le site ?</a> </li>
                                 <ul role="menu" class="dropdown-menu" id="dropdown-menu-list">
                                     <li>
                                         <a>
-                                            <input type="checkbox" id="checkAllListAge"><span class="lbl"> Sélectionner/Déselectionner tout</span> </a>
+                                            <input type="checkbox" id="checkAllListAge" checked><span class="lbl"> Sélectionner/Déselectionner tout</span> </a>
                                     </li>
                                     <li class="divider"></li>
                                     <li>
                                         <a>
-                                            <input type="checkbox" class="checkListAge"> <span class="lbl">Tout petits</span> </a>
+                                            <input type="checkbox" class="checkListAge" checked> <span class="lbl">Tout petits</span> </a>
                                     </li>
                                     <li>
                                         <a>
-                                            <input type="checkbox" class="checkListAge"><span class="lbl"> Enfants</span> </a>
+                                            <input type="checkbox" class="checkListAge" checked><span class="lbl"> Enfants</span> </a>
                                     </li>
                                     <li>
                                         <a>
-                                            <input type="checkbox" class="checkListAge"><span class="lbl">
+                                            <input type="checkbox" class="checkListAge" checked><span class="lbl">
 								Ados</span> </a>
                                     </li>
                                     <li>
                                         <a>
-                                            <input type="checkbox" class="checkListAge"><span class="lbl">
+                                            <input type="checkbox" class="checkListAge" checked><span class="lbl">
 								Adultes</span> </a>
                                     </li>
                                     <li>
                                         <a>
-                                            <input type="checkbox" class="checkListAge"><span class="lbl">
+                                            <input type="checkbox" class="checkListAge" checked><span class="lbl">
 								Séniors</span> </a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
+                        
                     </div>
+                </div></div>
+                    <div class="row">
+                    <div class="col-md-12" style="padding-left:0px;"><div id="filters-container" class="col-md-12">
+                        <!-- Example single danger button -->
+                       
+    <span class="button-checkbox">
+        <button type="button" class="btn agri" data-color="primary">Agriculture et Viticulture</button>
+        <input type="checkbox" class="hidden"   />
+    </span>
+                       
+                        <span class="button-checkbox">
+        <button type="button" class="btn agri" data-color="primary">Animaux</button>
+        <input type="checkbox" class="hidden"   />
+    </span>
+                       
+                        <span class="button-checkbox">
+        <button type="button" class="btn art" data-color="primary">Communication et Médias</button>
+        <input type="checkbox" class="hidden"   />
+    </span>
+                       
+                        <span class="button-checkbox">
+        <button type="button" class="btn art" data-color="primary">Culture</button>
+        <input type="checkbox" class="hidden"   />
+    </span>
+                        <span class="button-checkbox">
+        <button type="button" class="btn educ" data-color="primary">Éducation</button>
+        <input type="checkbox" class="hidden"   />
+    </span>
+                       
+                        <span class="button-checkbox">
+        <button type="button" class="btn agri" data-color="primary">Entreprise et Travail</button>
+        <input type="checkbox" class="hidden"   />
+    </span>
+                       
+                        <span class="button-checkbox">
+        <button type="button" class="btn agri" data-color="primary">Environnement et cadre de vie</button>
+        <input type="checkbox" class="hidden"   />
+    </span>
+                       
+                        <span class="button-checkbox">
+        <button type="button" class="btn internat" data-color="primary">International</button>
+        <input type="checkbox" class="hidden"   />
+    </span>
+                       
+                        <span class="button-checkbox">
+        <button type="button" class="btn loisirs" data-color="primary">Loisirs</button>
+        <input type="checkbox" class="hidden"   />
+    </span>
+                       
+                        <span class="button-checkbox">
+        <button type="button" class="btn sociale" data-color="primary">Militaires Anciens Combattants</button>
+        <input type="checkbox" class="hidden"   />
+    </span>
+                       
+                   <span class="button-checkbox">
+        <button type="button" class="btn sociale" data-color="primary">Rapatriés</button>
+        <input type="checkbox" class="hidden"   />
+    </span>     
+          <span class="button-checkbox">
+          
+        <button type="button" class="btn religion" data-color="primary">Religions et Philosophies</button>
+        <input type="checkbox" class="hidden"   />
+    </span>
+                                  
+                                       <span class="button-checkbox">
+        <button type="button" class="btn santé" data-color="primary">Santé</button>
+        <input type="checkbox" class="hidden"   />
+    </span>    
+                                  
+                                   <span class="button-checkbox">
+        <button type="button" class="btn educ" data-color="primary">Sciences</button>
+        <input type="checkbox" class="hidden"   />
+    </span>
+                                  
+                                   <span class="button-checkbox">
+        <button type="button" class="btn sociale" data-color="primary">Social et Citoyenneté</button>
+        <input type="checkbox" class="hidden"   />
+    </span>
+                                  
+                                   <span class="button-checkbox">
+        <button type="button" class="btn sports" data-color="primary">Sports</button>
+        <input type="checkbox" class="hidden"   />
+    </span>
+                                  
+                                   <span class="button-checkbox">
+        <button type="button" class="btn sociale" data-color="primary">Vie des quartiers</button>
+        <input type="checkbox" class="hidden"   />
+    </span>
+                                   
+                    </div></div>
+               
                 </div>
+                </div>
+                <div class="col-md-1">
+                    <button class="valider">Valider</button>
+                </div>
+            </div>
                 <div class="row" style="padding-top:50px;">
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="assoc-container">
@@ -386,6 +490,7 @@ Comment utiliser le site ?</a> </li>
                 </div>
             </div>
         </section>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
