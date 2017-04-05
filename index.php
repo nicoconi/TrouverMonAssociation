@@ -8,16 +8,14 @@
     <link rel="icon" type="image/png" href="./contenu/favicon/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="./contenu/favicon/favicon-16x16.png" sizes="16x16" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
-
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css"> </head>
-    <!-- Load Leaflet from CDN-->
-	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet-src.js"></script>
-	
-	<!-- Load Esri Leaflet from CDN -->
-	<script src="https://unpkg.com/esri-leaflet@2.0.8"></script>
+<!-- Load Leaflet from CDN-->
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet-src.js"></script>
+<!-- Load Esri Leaflet from CDN -->
+<script src="https://unpkg.com/esri-leaflet@2.0.8"></script>
 <script src="https://use.fontawesome.com/8c5f616343.js"></script>
 
 <body>
@@ -63,6 +61,7 @@ Comment utiliser le site ?</a> </li>
             <!-- /#page-content-wrapper -->
         </section>
         <section class="map" id="second">
+           
             <div class="switcher">
                 <div class="switch-icon icon-map"><i class="fa fa-map fa-2x" aria-hidden="true"></i> </div>
                 <div class="switch-icon icon-list"><i class="fa fa-list fa-2x" aria-hidden="true"></i> </div>
@@ -84,119 +83,189 @@ Comment utiliser le site ?</a> </li>
                 </div>
                 <div class="row">
                     <div id="mapid">
-                        <div class="input-group" id="group-dropd-top">
-                            <div class="input-group-btn" id="input-btn">
-                                <button tabindex="-1" class="btn btn-default" data-toggle="dropdown" type="button">Recherche par quartiers</button>
-                                <button tabindex="-1" data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button"> <span class="caret"></span> </button>
-                                <ul role="menu" class="dropdown-menu" id="dropdown-menu-map">
-                                    <li>
-                                        <a href="#">
-                                            <input type="checkbox" id="checkAll"><span class="lbl"> Sélectionner/Déselectionner tout</span> </a>
-                                    </li>
-                                    <li class="divider"></li>
-                                    <li>
-                                        <a>
-                                            <input type="checkbox" class="check"> <span class="lbl"> Les Cévennes</span> </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <input type="checkbox" class="check"><span class="lbl">
+                        <form method="post" action="index.php">
+                            <div class="input-group" id="group-dropd-top">
+                                <div class="input-group-btn" id="input-btn">
+                                    <button tabindex="-1" class="btn btn-default" data-toggle="dropdown" type="button">Recherche par quartiers</button>
+                                    <button tabindex="-1" data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button"> <span class="caret"></span> </button>
+                                    <ul role="menu" class="dropdown-menu" id="dropdown-menu-map">
+                                        <li>
+                                            <a href="#">
+                                                <input type="checkbox" id="checkAll"><span class="lbl"> Sélectionner/Déselectionner tout</span> </a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <a>
+                                                <input type="checkbox" class="check"> <span class="lbl"> Les Cévennes</span> </a>
+                                        </li>
+                                        <li>
+                                            <a>
+                                                <input type="checkbox" class="check"><span class="lbl">
 								Port Marianne</span> </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <input type="checkbox" class="check"><span class="lbl">
+                                        </li>
+                                        <li>
+                                            <a>
+                                                <input type="checkbox" class="check"><span class="lbl">
 								Mosson</span> </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <input type="checkbox" class="check"><span class="lbl">
+                                        </li>
+                                        <li>
+                                            <a>
+                                                <input type="checkbox" class="check"><span class="lbl">
 								Près d'Arènes</span> </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <input type="checkbox" class="check"><span class="lbl">
+                                        </li>
+                                        <li>
+                                            <a>
+                                                <input type="checkbox" class="check"><span class="lbl">
 								Croix d'Argent</span> </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <input type="checkbox" class="check"><span class="lbl">
+                                        </li>
+                                        <li>
+                                            <a>
+                                                <input type="checkbox" class="check"><span class="lbl">
 								Montpellier Centre</span> </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <input type="checkbox" class="check"><span class="lbl">
+                                        </li>
+                                        <li>
+                                            <a>
+                                                <input type="checkbox" class="check"><span class="lbl">
 								Hôpitaux Facultés</span> </a>
-                                    </li>
-                                </ul>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="input-group" id="group-dropd">
-                            <div class="input-group-btn" id="input-btn">
-                                <button tabindex="-1" class="btn btn-default" data-toggle="dropdown" type="button">Recherche par tranche d'âge</button>
-                                <button tabindex="-1" data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button"> <span class="caret"></span> </button>
-                                <ul role="menu" class="dropdown-menu" id="dropdown-menu-map">
-                                    <li>
-                                        <a href="#">
-                                            <input type="checkbox" id="checkAllAge"><span class="lbl"> Sélectionner/Déselectionner tout</span> </a>
-                                    </li>
-                                    <li class="divider"></li>
-                                    <li>
-                                        <a>
-                                            <input type="checkbox" class="checkAge"> <span class="lbl">Tout petits</span> </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <input type="checkbox" class="checkAge"><span class="lbl"> Enfants</span> </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <input type="checkbox" class="checkAge"><span class="lbl">
+                            <div class="input-group" id="group-dropd">
+                                <div class="input-group-btn" id="input-btn">
+                                    <button tabindex="-1" class="btn btn-default" data-toggle="dropdown" type="button">Recherche par tranche d'âge</button>
+                                    <button tabindex="-1" data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button"> <span class="caret"></span> </button>
+                                    <ul role="menu" class="dropdown-menu" id="dropdown-menu-map">
+                                        <li>
+                                            <a href="#">
+                                                <input type="checkbox" id="checkAllAge"><span class="lbl"> Sélectionner/Déselectionner tout</span> </a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <a>
+                                                <input type="checkbox" class="checkAge"> <span class="lbl">Tout petits</span> </a>
+                                        </li>
+                                        <li>
+                                            <a>
+                                                <input type="checkbox" class="checkAge"><span class="lbl"> Enfants</span> </a>
+                                        </li>
+                                        <li>
+                                            <a>
+                                                <input type="checkbox" class="checkAge"><span class="lbl">
 								Ados</span> </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <input type="checkbox" class="checkAge"><span class="lbl">
+                                        </li>
+                                        <li>
+                                            <a>
+                                                <input type="checkbox" class="checkAge"><span class="lbl">
 								Adultes</span> </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <input type="checkbox" class="checkAge"><span class="lbl">
+                                        </li>
+                                        <li>
+                                            <a>
+                                                <input type="checkbox" class="checkAge"><span class="lbl">
 								Séniors</span> </a>
-                                    </li>
-                                </ul>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
+                        </form>
                         <div id="map-container">
-                        <script>
-                            var mymap = L.map('map-container').setView([43.610999, 3.87924], 14);
-                            L.tileLayer('http://{s}.tile.openstreetmap.se/hydda/full/{z}/{x}/{y}.png', {
-                                attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                            }).addTo(mymap);
-                        </script>
+                            <script>
+                                var mymap = L.map('map-container').setView([43.610999, 3.87924], 14);
+                                L.tileLayer('http://{s}.tile.openstreetmap.se/hydda/full/{z}/{x}/{y}.png', {
+                                    attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                                }).addTo(mymap);
+                            </script>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div id="filters-container" class="col-md-12">
-                        <ul class="list-inline theme-container list-group checked-list-box">
-                            <li class="list-group-item parent">Cras justo odio
-                                <ul class="child-container">
-                                    <li class="list-child-group-item">Child 1</li>
-                                    <li class="list-child-group-item">Child 1</li>
-                                    <li class="list-child-group-item">Child 1</li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="list-inline theme-container list-group checked-list-box">
-                            <li class="list-group-item parent">Cras justo odio
-                                <ul class="child-container">
-                                    <li class="list-child-group-item">Child 1</li>
-                                    <li class="list-child-group-item">Child 1</li>
-                                    <li class="list-child-group-item">Child 1</li>
-                                </ul>
-                            </li>
-                        </ul>
+                        <!-- Example single danger button -->
+                       
+    <span class="button-checkbox">
+        <button type="button" class="btn agri" data-color="primary">Agriculture et Viticulture</button>
+        <input type="checkbox" class="hidden" checked />
+    </span>
+                       
+                        <span class="button-checkbox">
+        <button type="button" class="btn agri" data-color="primary">Animaux</button>
+        <input type="checkbox" class="hidden" checked />
+    </span>
+                       
+                        <span class="button-checkbox">
+        <button type="button" class="btn art" data-color="primary">Communication et Médias</button>
+        <input type="checkbox" class="hidden" checked />
+    </span>
+                       
+                        <span class="button-checkbox">
+        <button type="button" class="btn art" data-color="primary">Culture</button>
+        <input type="checkbox" class="hidden" checked />
+    </span>
+                        <span class="button-checkbox">
+        <button type="button" class="btn educ" data-color="primary">Éducation</button>
+        <input type="checkbox" class="hidden" checked />
+    </span>
+                       
+                        <span class="button-checkbox">
+        <button type="button" class="btn agri" data-color="primary">Entreprise et Travail</button>
+        <input type="checkbox" class="hidden" checked />
+    </span>
+                       
+                        <span class="button-checkbox">
+        <button type="button" class="btn agri" data-color="primary">Environnement et cadre de vie</button>
+        <input type="checkbox" class="hidden" checked />
+    </span>
+                       
+                        <span class="button-checkbox">
+        <button type="button" class="btn internat" data-color="primary">International</button>
+        <input type="checkbox" class="hidden" checked />
+    </span>
+                       
+                        <span class="button-checkbox">
+        <button type="button" class="btn" data-color="primary">Loisirs</button>
+        <input type="checkbox" class="hidden" checked />
+    </span>
+                       
+                        <span class="button-checkbox">
+        <button type="button" class="btn sociale" data-color="primary">Militaires Anciens Combattants</button>
+        <input type="checkbox" class="hidden" checked />
+    </span>
+                       
+                   <span class="button-checkbox">
+        <button type="button" class="btn sociale" data-color="primary">Rapatriés</button>
+        <input type="checkbox" class="hidden" checked />
+    </span>     
+          <span class="button-checkbox">
+          
+        <button type="button" class="btn religion" data-color="primary">Religions et Philosophies</button>
+        <input type="checkbox" class="hidden" checked />
+    </span>
+                                  
+                                       <span class="button-checkbox">
+        <button type="button" class="btn santé" data-color="primary">Santé</button>
+        <input type="checkbox" class="hidden" checked />
+    </span>    
+                                  
+                                   <span class="button-checkbox">
+        <button type="button" class="btn educ" data-color="primary">Sciences</button>
+        <input type="checkbox" class="hidden" checked />
+    </span>
+                                  
+                                   <span class="button-checkbox">
+        <button type="button" class="btn sociale" data-color="primary">Social et Citoyenneté</button>
+        <input type="checkbox" class="hidden" checked />
+    </span>
+                                  
+                                   <span class="button-checkbox">
+        <button type="button" class="btn sports" data-color="primary">Sports</button>
+        <input type="checkbox" class="hidden" checked />
+    </span>
+                                  
+                                   <span class="button-checkbox">
+        <button type="button" class="btn sociale" data-color="primary">Vie des quartiers</button>
+        <input type="checkbox" class="hidden" checked />
+    </span>
+                                   
                     </div>
                 </div>
             </div>
