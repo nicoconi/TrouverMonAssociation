@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trouver Mon Association</title>
+    <link rel="icon" type="image/png" href="./contenu/favicon/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="./contenu/favicon/favicon-16x16.png" sizes="16x16" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
@@ -17,7 +19,7 @@
         <!-- Sidebar -->
         <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
             <ul class="nav sidebar-nav">
-                <li class="sidebar-brand"> <img src="contenu/images/LogoV2.svg"></li>
+                <li class="sidebar-brand"> <a href="./"><img src="contenu/images/LogoV2.svg"></a></li>
                 <li class="anim switch-list"> <a href="#second"><i class="fa fa-map" aria-hidden="true"></i> Carte</a> </li>
                 <li class="anim switch-list"> <a href="#container-list"><i class="fa fa-list" aria-hidden="true"></i> Liste</a> </li>
                 <li class="anim"> <a href="#"><i class="fa fa-bar-chart" aria-hidden="true"></i>
@@ -33,7 +35,7 @@ Comment utiliser le site ?</a> </li>
             <div class="container">
                 <div class="row row-assoc">
                     <div class="col-md-8 col-xs-6" id="container-assoc">
-                      <a><i class="fa fa-chevron-left" aria-hidden="true"></i>
+                      <a href="#" onclick="history.go(-1)"><i class="fa fa-chevron-left" aria-hidden="true"></i>
 Revenir aux associations</a>
                        <h1>Nom de l'association</h1>
                        <h2><i>Catégorie de l'association</i></h2>
@@ -49,6 +51,7 @@ Revenir aux associations</a>
                 </div>
                 </div>
                 <div class="container-fluid" id="container-similaire">
+                <div class="container">
                 <div class="row">
                 <h2 style="color : white; padding : 0; margin : 0; padding-bottom : 20px;">Associations similaires :</h2>
                 </div>
@@ -62,6 +65,7 @@ Revenir aux associations</a>
                             
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
             <!-- /#page-content-wrapper -->
