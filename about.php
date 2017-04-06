@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" ng-app="statsApp">
+<html lang="fr">
 
 <head>
     <meta charset="utf-8">
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css"> </head>
 
-<body ng-controller="statsController">
+<body>
     <div id="wrapper">
         <div class="overlay"></div>
         <!-- Sidebar -->
@@ -33,30 +33,10 @@ Comment utiliser le site ?</a> </li>
         <!-- /#sidebar-wrapper -->
         <!-- Page Content -->
         <div></div>
-        <section class="background-stat" >
+        <section class="background-stat">
             <button type="button" class="hamburger is-closed" data-toggle="offcanvas" id="hamburger"> <span class="hamb-top"></span> <span class="hamb-middle"></span> <span class="hamb-bottom"></span> </button>
            
-            <div class="container" style="background : white; height:100vh;     padding: 60px;
-">
-                <div class="row">
-                   <div class="col-md-8">
-                        <div class="switcher-stats">
-                            <a id="stat1" href="#stat1">STAT 1</a>
-                             <a id="stat2" href="#stat2">STAT 2</a>
-                           <a id="stat3" href="#stat3">STAT 3</a>                          <a id="stat4" href="#stat4">STAT 4</a>
-                            <a id="stat5" href="#stat5">STAT 5</a>                 
-                            <a id="stat6" href="#stat6">STAT 6</a>                       </div>
-    </div>
-                    <div class="col-md-4 hidden-sm hidden-xs">
-                        <img class="logostat" src="contenu/images/LogoV2.svg">
-                        
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="{{ pageClass }}" ng-view> </div>
-                </div>
-      
-            </div>
+            <div class="container"></div>
             <!-- /#page-content-wrapper -->
         </section>
     </div>

@@ -1,8 +1,6 @@
 $(function () {
     
     $('.button-checkbox').each(function () {
-
-
         // Settings
         var $widget = $(this),
             $button = $widget.find('button'),

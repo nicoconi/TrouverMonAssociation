@@ -7,7 +7,10 @@ var statsApp = angular.module('statsApp', ['ngRoute']);
     // configure our routes
      statsApp.config(function($routeProvider) {
         $routeProvider
-
+.when('/', {
+                templateUrl : 'stats/stat1.php',
+                controller  : 'statsController'
+            })
         
         .when('/stat1', {
                 templateUrl : 'stats/stat1.php',
@@ -37,6 +40,12 @@ var statsApp = angular.module('statsApp', ['ngRoute']);
                 templateUrl : 'stats/stat6.php',
                 controller  : 'stats6Controller'
             })
+        
+         .when('/stat7', {
+                templateUrl : 'stats/stat7.php',
+                controller  : 'stats7Controller'
+            })
+       
        
         
     });
@@ -61,4 +70,8 @@ statsApp.controller('stats5Controller', function($scope) {
     });
 statsApp.controller('stats6Controller', function($scope) {
         $scope.pageClass = 'stat6';    
+    });
+
+statsApp.controller('stats7Controller', function($scope) {
+        $scope.pageClass = 'stat7';    
     });

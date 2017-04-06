@@ -296,4 +296,3 @@
 
 
 
-    <script src="./js/filters.js"></script>
