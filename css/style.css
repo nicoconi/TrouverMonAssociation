@@ -88,6 +88,7 @@ input, .lbl,.btn{
 /*-------------------------------*/
 
 #hamburger {
+    
     padding-left: 0;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -642,7 +643,7 @@ background: #417505;
         color: white;
 
 }
-.santé{
+.sante{
     background: #50E3C2;
         color: white;
 
@@ -793,6 +794,72 @@ padding: 10px;
 color: white;
 
 }
+.assoc-viedequartier{
+    background: #ADE177;
+}
+
+.assoc-travail{
+  background:   #EAE8EF ;
+}
+
+.assoc-sport{
+        background: #6EC5B6;
+
+}
+
+.assoc-sciences{
+        background: #60358B;
+
+}
+
+.assoc-sante{
+        background: #4A4A4A;
+
+}
+
+.assoc-militaire{
+        background: #D9D187;
+
+}
+
+.assoc-medias{
+        background: #949494;
+
+}
+
+.assoc-maison{
+        background: #ADE177;
+
+}
+
+.assoc-loisirs{
+        background: #BD2230;
+
+}
+
+.assoc-international{
+        background: #4A4A4A;
+
+}
+.assoc-environnement{
+        background: #0E8B46;
+
+}
+.assoc-education{
+        background: #AA0448;
+
+}
+
+.assoc-animaux{
+        background: #CF8451;
+
+}
+
+.assoc-agriculture {
+        background: #ADE177;
+
+}
+
 
 .assoc-container .assoc-title{
     margin-bottom: 0px;
@@ -977,12 +1044,15 @@ i{
 
 
 /*-------------------------------*/
+
+
+
 .background-stat{
     background-image: url('../contenu/images/background.jpg');
     background-size: cover;
     width: 100vw;
-    height: 100vh;
-    position: fixed;
+    height: 100%;
+    position: relative;
 }
 .logostat{
     max-width: 50%;
@@ -1056,5 +1126,138 @@ text-decoration: none;
 .switcher-stats a:nth-child(6){
         background-color: #4A4A4A;
 
+}
+
+
+
+/*-------------------------------*/
+
+
+/*             About             */
+
+
+/*-------------------------------*/
+
+.about{
+    color : #4A4A4A !important;
+    padding-top: 0 !important;
+        font-size: 3em !important;
+
+}
+#photo-container{
+    margin: 0 auto;
+}
+
+#photo-container .col-md-1{
+    position: relative;
+   
+}
+
+#photo-container div:hover img{
+    opacity: 0.3;
+}
+
+#photo-container div:hover .middle{
+    opacity: 1;
+}
+
+#photo-container img{
+    display: block;
+    text-align: center;
+    max-width: 100%;
+  padding: 10px;
+        margin: 0 auto;
+    opacity: 1;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.logo-about{
+    max-width: 30%;
+    margin: 0 auto;
+    text-align: center;
+}
+@media (min-width: 768px){
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1  {
+    width: 100%;
+    *width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1 {
+    width: 14.285714285714285714285714285714%;
+    *width: 14.285714285714285714285714285714%;
+  }
+}
+
+/**
+ *  The following is not really needed in this case
+ *  Only to demonstrate the usage of @media for large screens
+ */    
+@media (min-width: 1200px) {
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1 {
+    width: 14.285714285714285714285714285714%;
+    *width: 14.285714285714285714285714285714%;
+  }
+}
+
+.rowbtn{
+    padding-top: 20vh;
+}
+.btn-5 {
+  background: none;
+  border: 3px solid #EB5E5E;
+  border-radius: 5px;
+  color: #EB5E5E;
+  display: block;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin: 1em auto;
+  padding: 1em 5em;
+  position: relative;
+  text-transform: uppercase;
+     -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;    
+
+}
+.btn-5 a{
+    text-decoration: none;
+     color : #EB5E5E;
+      -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;    
+
+}
+
+.btn-5:hover a{
+    text-decoration: none;
+     color : white;
+}
+.btn-5:hover{
+  background: #EB5E5E;
+    color: white;
 }
 

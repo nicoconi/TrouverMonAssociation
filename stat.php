@@ -18,16 +18,14 @@
         <div class="overlay"></div>
         <!-- Sidebar -->
         <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-            <ul class="nav sidebar-nav">
+                   <ul class="nav sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="index.php"><img src="contenu/images/LogoV2.svg"></a>
                 </li>
                 <li class="anim switch-list"> <a href="index.php#container-map"><i class="fa fa-map" aria-hidden="true"></i> Carte</a> </li>
                 <li class="anim switch-list"> <a href="list.php#container-list"><i class="fa fa-list" aria-hidden="true"></i> Liste</a> </li>
-                <li class="anim"> <a href="stat.php"><i class="fa fa-bar-chart" aria-hidden="true"></i>
-Statistiques</a> </li>
-                <li class="anim"> <a href="#"><i class="fa fa-question-circle-o" aria-hidden="true"></i>
-Comment utiliser le site ?</a> </li>
+                <li class="anim"> <a href="stat.php"><i class="fa fa-bar-chart" aria-hidden="true"></i> Statistiques</a> </li>
+                 <li class="anim"> <a href="about.php"><i class="fa fa-question-circle-o" aria-hidden="true"></i> Qui sommes-nous ?</a></li>
             </ul>
         </nav>
         <!-- /#sidebar-wrapper -->
@@ -36,7 +34,7 @@ Comment utiliser le site ?</a> </li>
         <section class="background-stat" >
             <button type="button" class="hamburger is-closed" data-toggle="offcanvas" id="hamburger"> <span class="hamb-top"></span> <span class="hamb-middle"></span> <span class="hamb-bottom"></span> </button>
            
-            <div class="container" style="background : white; height:100vh;     padding: 60px;
+            <div class="container" style="background : white; min-height:100vh;   padding: 60px;
 ">
                 <div class="row">
                    <div class="col-md-8">

@@ -24,10 +24,8 @@
                 </li>
                 <li class="anim switch-list"> <a href="index.php#container-map"><i class="fa fa-map" aria-hidden="true"></i> Carte</a> </li>
                 <li class="anim switch-list"> <a href="list.php#container-list"><i class="fa fa-list" aria-hidden="true"></i> Liste</a> </li>
-                <li class="anim"> <a href="stat.php"><i class="fa fa-bar-chart" aria-hidden="true"></i>
-Statistiques</a> </li>
-                <li class="anim"> <a href="#"><i class="fa fa-question-circle-o" aria-hidden="true"></i>
-Comment utiliser le site ?</a> </li>
+                <li class="anim"> <a href="stat.php"><i class="fa fa-bar-chart" aria-hidden="true"></i> Statistiques</a> </li>
+                 <li class="anim"> <a href="about.php"><i class="fa fa-question-circle-o" aria-hidden="true"></i> Qui sommes-nous ?</a></li>
             </ul>
         </nav>
         <!-- /#sidebar-wrapper -->
@@ -246,7 +244,7 @@ Comment utiliser le site ?</a> </li>
     </span>
                                   
                                        <span class="button-checkbox">
-        <button type="button" class="btn santé" data-color="primary">Santé</button>
+        <button type="button" class="btn sante" data-color="primary">Santé</button>
         <input type="checkbox" class="hidden"  />
     </span>    
                                   

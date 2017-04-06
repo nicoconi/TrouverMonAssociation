@@ -353,6 +353,13 @@ function loadLiquidFillGauge(elementId, value, config) {
     return new GaugeUpdater();
 }
 </script>
-<h3> 2017                       2016                      2015                     2014                       2013</h3>
 
 
+
+<div class="row" style="text-align:center; padding-top:30px;">
+    <div class="col-md-2 col-md-offset-1">2017</div>
+    <div class="col-md-2">2016</div>
+    <div class="col-md-2">2015</div>
+    <div class="col-md-2">2014</div>
+    <div class="col-md-2">2013</div>
+</div>

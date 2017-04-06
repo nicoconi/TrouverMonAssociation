@@ -18,14 +18,14 @@
         <div class="overlay"></div>
         <!-- Sidebar -->
         <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-            <ul class="nav sidebar-nav">
+                        <ul class="nav sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="index.php"><img src="contenu/images/LogoV2.svg"></a>
                 </li>
                 <li class="anim switch-list"> <a href="index.php#container-map"><i class="fa fa-map" aria-hidden="true"></i> Carte</a> </li>
                 <li class="anim switch-list"> <a href="list.php#container-list"><i class="fa fa-list" aria-hidden="true"></i> Liste</a> </li>
-                <li class="anim"> <a href="stat.php"><i class="fa fa-bar-chart" aria-hidden="true"></i>Statistiques</a> </li>
-                <li class="anim"> <a href="#"><i class="fa fa-question-circle-o" aria-hidden="true"></i>Comment utiliser le site ?</a></li>
+                <li class="anim"> <a href="stat.php"><i class="fa fa-bar-chart" aria-hidden="true"></i> Statistiques</a> </li>
+                 <li class="anim"> <a href="about.php"><i class="fa fa-question-circle-o" aria-hidden="true"></i> Qui sommes-nous ?</a></li>
             </ul>
         </nav>
         <!-- /#sidebar-wrapper -->
@@ -212,7 +212,7 @@
         <button type="button" class="btn religion" data-color="primary">Religions et Philosophies</button>
         <input type="checkbox" class="hidden"   />
     </span> <span class="button-checkbox">
-        <button type="button" class="btn santé" data-color="primary">Santé</button>
+        <button type="button" class="btn sante" data-color="primary">Santé</button>
         <input type="checkbox" class="hidden"   />
     </span> <span class="button-checkbox">
         <button type="button" class="btn educ" data-color="primary">Sciences</button>
@@ -236,7 +236,7 @@
     </div>
     <div class="row" style="padding-top:50px;">
         <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="assoc-container">
+            <div class="assoc-container assoc-sante">
                 <h2 class="assoc-title">Nom de l'association</h2> <img src="contenu/icones/icon_test.png" class="assoc-icon">
                 <h4 class="assoc-category"><i>Catégorie de l'association</i></h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore cupiditate modi odit soluta, a aut eaque officia, pariatur ipsam incidunt, sint dolore fugiat assumenda sequi nesciunt velit dolorum suscipit culpa!</p>
