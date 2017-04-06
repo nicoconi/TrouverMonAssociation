@@ -640,7 +640,7 @@ background: #417505;
 
 /*-------------------------------*/
 
-.map {
+.container-both {
     position: relative;
     height: 100%;
     padding-top: 3vh;
@@ -691,8 +691,8 @@ background: #417505;
 }
 
 #container-list {
-    display: none;
     padding-bottom: 20px;
+    min-height: 100vh;
 }
 
 
